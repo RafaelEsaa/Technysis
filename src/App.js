@@ -1,25 +1,35 @@
 import React, { Component } from 'react';
-import technysis from './images/technysis.png'
+import axios from 'axios';
+
 import './sass/index.scss'
 
+import Header from './Header'
+import ShowData from './ShowData'
+
 class App extends Component {
+
+  componentDidMount(){
+    axios.get('https://api.nasa.gov/planetary/apod?api_key=ImSeAs20u1fr8smKkbQ1dg9GFfzHSLv0Iyfkc12C')
+    .then(function (response) {
+      // handle success
+      console.log(response);
+    })
+    .catch(function (error) {
+      // handle error
+      console.log(error);
+    })
+    .then(function () {
+      // always executed
+    });
+  }
+
   render() {
     return (
       <div>
         <div className="App">
-          <header className="App-header">
-            <div className="row full-width no-margin">
-              <div className="col-md-12">
-                <img src={technysis} className="logo" alt="logo" />
-              </div>
-            </div>
-          </header>
+          <Header title="Prueba tecnica. Reactjs"/>
         </div>
-        <div className="row full-width no-margin">
-          <div className="col-md-2 ">
-            <p>Hola!</p>
-          </div>
-        </div>
+        <ShowData/>
       </div>
     );
   }

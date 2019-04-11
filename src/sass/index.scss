@@ -1,5 +1,6 @@
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
 @import './style.scss';
+@import './colors.scss';
 
 //General
 .full-width{
@@ -8,4 +9,8 @@
 
 .no-margin{
     margin: 0px;
+}
+
+.no-padding{
+    padding: 0px;
 }
