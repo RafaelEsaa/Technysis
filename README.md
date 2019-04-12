@@ -22,4 +22,4 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-Note: the test for eslint is running through of run script (npm start)
+### Note: the test for eslint is running through of run script (npm start)
