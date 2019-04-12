@@ -1,9 +1,23 @@
 @import './colors.scss';
 
 .logo{
-    width: 100px;
+    max-width: 100px;
 }
 
 .bg-blue-light{
     background-color: $blue-light
+}
+
+.img-hole-black{
+    width: 500px;
+}
+
+.btn-show{
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid grey;
+    padding: 6px 10px;
+    &:focus{
+        box-shadow: none;
+    }
 }
