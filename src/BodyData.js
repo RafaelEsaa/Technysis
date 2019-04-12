@@ -43,15 +43,15 @@ class BodyData extends Component {
     return (
 <div className='row full-width no-margin'>
 <div className='col-md-12 pt-4'>
-    <BtnShow
-    receiveShow={(data) => this.showInfo(data)}
-    />
+<BtnShow
+receiveShow={(data) => this.showInfo(data)}
+/>
 </div>
 {(this.state.showData)
-    ? <div className='col-md-12 py-4'>
-    <ShowData data={this.state.dataApod} />
-    </div>
-    : ''
+? <div className='col-md-12 py-4'>
+<ShowData data={this.state.dataApod} />
+</div>
+: ''
 }
 </div>
     )
