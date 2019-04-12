@@ -21,8 +21,8 @@ class ShowData extends Component {
         <h3>{this.state.data.title}</h3>
         <img src={this.state.data.url} className='img-fluid img-hole-black' alt='hole black' />
         <div className='pt-4'>
-          <p>Date: {this.state.data.date}</p>
-          <p>Explanation: {this.state.data.explanation}</p>
+            <p>Date: {this.state.data.date}</p>
+            <p>Explanation: {this.state.data.explanation}</p>
         </div>
       </div>
     )
