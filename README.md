@@ -1,5 +1,11 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Step for install project
+1. `git clone https://github.com/RafaelEsaa/Technysis.git`
+2. `npm install`
+3. `npm start`
+4. Done. Enjoy the project
+
 ## Available Scripts
 
 In the project directory, you can run:
